@@ -1,0 +1,99 @@
+.mainPage-section-container{
+    height: 100dvh;
+    width: 100%;
+    padding: 50px 0px 60px 60px;
+}
+.mainPage-title{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.mainPage-list-row{
+    display: grid;
+    grid-template-columns: minmax(300px, 435px) 300px 350px 250px 250px;
+    grid-template-rows: 50px;
+}
+.mainPage-list-head{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px; 
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    color: #343A40;
+}
+.mainPage-list-data{
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    color: #6C757D;
+}
+.action-container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+.action-container-circles-box{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding-left: 15px;
+    height: 20px;
+}
+.action-container-circles{
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.action-container-panel{
+    display: none;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 20px;
+    position: absolute;
+    top: 35px;
+    border-radius: 5px;
+}
+.action-container-panel.active{
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(181, 177, 177, 0.935);
+    transform:translateX(-25%)
+}
+.remove-action{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+}
+.action-container-circles.active:first-child{
+    transform: translateX(155%);
+}
+.action-container-circles.active:last-child{
+    transform:translateX(-180%)
+}
+.action-container-circles.active:nth-child(2){
+    width: 10px;
+    height: 10px;
+    transform: translateX(-10%);
+}
